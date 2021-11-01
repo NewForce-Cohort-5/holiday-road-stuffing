@@ -1,0 +1,9 @@
+.navbar {
+  background-color: #b7b7a4;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}

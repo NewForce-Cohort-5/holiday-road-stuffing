@@ -1,7 +1,7 @@
 import { Navbar } from "./navbar/Navbar.js";
-import { Form } from "./form/Form.js";
+// import { Form } from "./form/Form.js";
 import { FormSelect } from "./form/FormSelect.js";
-import {getFiveDayWeather} from "./weather/WeatherProvider.js"
+// import {getFiveDayWeather} from "./weather/WeatherProvider.js"
 // import { EaterySelect } from "./eateries/EateriesSelect.js";
 // import {eateriesList} from "./eateries/EateriesList.js"
 // import { AttractionSelect } from "./attractions/AttractionSelect.js";
@@ -13,16 +13,13 @@ import {Footer} from "./footer/Footer.js"
 
 
 Navbar();
-Form();
-FormSelect()
+FormSelect();
 // EaterySelect()
 // AttractionSelect()
 // getPark()
 // parkSelect()
 // parkList()
 Footer();
-
-
 
 
 

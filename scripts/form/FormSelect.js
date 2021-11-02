@@ -34,7 +34,7 @@ const renderParks = (parksCollection) => {
             <option selected>Choose...</option>
             ${
                 parksCollection.map((park) => {
-                    const parkName = park.name;
+                    const parkName = park.fullName;
                     return `<option>${parkName}</option>`
                 })
             }
@@ -64,7 +64,7 @@ const renderEateries = (eateriesCollection) => {
             <option selected>Choose...</option>
             ${
                 eateriesCollection.map((eatery) => {
-                    const eateryName = eatery.name;
+                    const eateryName = eatery.businessName;
                     return `<option>${eateryName}</option>`
                 })
             }

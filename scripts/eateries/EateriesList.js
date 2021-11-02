@@ -17,7 +17,9 @@ export const eateriesList = (whichFilter, wordToFilter) => {
             })
         }
         eateryArray.forEach((singleEateryObj) => {
-            contentTarget.innerHTML += Eatery(singleEateryObj)
+            contentTarget.innerHTML = Eatery(singleEateryObj)
         })
     })
 }
+
+//if you want to add more than one eatery to list add + before = Eatery

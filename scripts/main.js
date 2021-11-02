@@ -1,6 +1,8 @@
+import { Navbar } from "./navbar/Navbar.js";
 import { Form } from "./form/Form.js";
-import { getWeather } from "./weather/WeatherProvider.js";
+import {getFiveDayWeather} from "./weather/WeatherProvider.js"
+import {Footer} from "./footer/Footer.js"
 
-
+Navbar();
 Form();
-getWeather("Yellow Stone National Park");
+Footer();

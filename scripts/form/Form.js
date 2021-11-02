@@ -7,7 +7,7 @@ export const Form = () => {
       <h2>Start Exploring</h2>
     </div>
     <div class="form-row">
-      <div class="form-group col-md-10">
+      <div class="form-group col-md-10 filters-parks">
         <label for="">National Parks</label>
         <select id="" class="form-control">
           <option selected>Choose...</option>
@@ -16,7 +16,7 @@ export const Form = () => {
       </div>
     </div>
     <div class="form-row">
-      <div class="form-group col-md-10">
+      <div class="form-group col-md-10 filters-bizarraries">
         <label for="">Bizarraries</label>
         <select id="" class="form-control">
           <option selected>Choose...</option>
@@ -25,7 +25,7 @@ export const Form = () => {
       </div>
     </div>
     <div class="form-row">
-      <div class="form-group col-md-10">
+      <div class="form-group col-md-10 filters-eateries">
         <label for="">Eateries</label>
         <select id="" class="form-control">
           <option selected>Choose...</option>

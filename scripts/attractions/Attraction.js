@@ -1,22 +1,32 @@
 export const Attraction = (attraction) => {
   let hasSouvenirs = ""
   let hasRestrooms = ""
+  let noAmenities = ""
   if(attraction.ameneties.souvenirs === true){
-    hasSouvenirs = "Yes" 
-     }   else if(attraction.ameneties.souvenirs === false){
-        hasSouvenirs = "No"
+    hasSouvenirs = "You can buy souvenirs here." 
+     }   else {
+        hasSouvenirs = ""
   }
   if(attraction.ameneties.restrooms === true){
-    hasRestrooms = "Yes"
-    }   else if(attraction.ameneties.restrooms === false){
-        hasRestrooms = "No"
+    hasRestrooms = "There are restrooms here."
+    }   else {
+        hasRestrooms = ""
+  }
+  if(attraction.ameneties.souvenirs === false && attraction.ameneties.restrooms === false){
+    noAmenities = "There are no amenenities here."
+  } else {
+    noAmenities = ""
   }
   
   return `
             <section class="attraction__card">
                 <h4 class="attraction__name">${attraction.name}</h4>
-                <p>Souvenirs: ${hasSouvenirs}</p>
-                <p>Restrooms: ${hasRestrooms}</p>
+                
+                <ul style="list-style: none">
+                  <li>${hasSouvenirs}</li>
+                  <li>${hasRestrooms}</li>
+                  <li>${noAmenities}</li>
+                </ul>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   More Info

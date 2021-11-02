@@ -1,8 +1,13 @@
 import { Navbar } from "./navbar/Navbar.js";
 import { Form } from "./form/Form.js";
 import {getFiveDayWeather} from "./weather/WeatherProvider.js"
+// import { EaterySelect } from "./eateries/EateriesSelect.js";
+// import {eateriesList} from "./eateries/EateriesList.js"
 import {Footer} from "./footer/Footer.js"
+
 
 Navbar();
 Form();
+// EaterySelect()
 Footer();
+

@@ -4,12 +4,12 @@ export const Attraction = (attraction) => {
   let noAmenities = ""
   if(attraction.ameneties.souvenirs === true){
     hasSouvenirs = "You can buy souvenirs here." 
-     }   else if(attraction.ameneties.souvenirs === false){
+     }   else {
         hasSouvenirs = ""
   }
   if(attraction.ameneties.restrooms === true){
     hasRestrooms = "There are restrooms here."
-    }   else if(attraction.ameneties.restrooms === false){
+    }   else {
         hasRestrooms = ""
   }
   if(attraction.ameneties.souvenirs === false && attraction.ameneties.restrooms === false){

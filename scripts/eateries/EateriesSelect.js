@@ -16,7 +16,7 @@ export const EaterySelect = () => {
 
 
 //create dropdown using object in array from api
-const render = ( eateryCollection ) => {
+const render = eateryCollection => {
     contentTarget.innerHTML = `
     <select class="dropdown" id="eaterySelect">
     <option value="0">Please select an eatery</option>

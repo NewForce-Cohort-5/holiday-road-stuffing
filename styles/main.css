@@ -30,6 +30,10 @@
   margin-top: 0.5em;
 }
 
+#search-icon {
+  margin-right: 0.5em;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -60,12 +64,12 @@ a:link {
   text-decoration: none;
 }
 
-.amenetiesOptions{
+.amenetiesOptions {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.amenetiesOptions li{
+.amenetiesOptions li {
   display: inline-block;
 }

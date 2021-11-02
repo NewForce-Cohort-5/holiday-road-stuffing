@@ -8,29 +8,17 @@ export const Form = () => {
     </div>
     <div class="form-row">
       <div class="form-group col-md-10 filters-parks">
-        <label for="">National Parks</label>
-        <select id="" class="form-control">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
+        
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-10 filters-bizarraries">
-        <label for="">Bizarraries</label>
-        <select id="" class="form-control">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
+        
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-10 filters-eateries">
-        <label for="">Eateries</label>
-        <select id="" class="form-control">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
+        
       </div>
     </div>
     <div class="form-row">

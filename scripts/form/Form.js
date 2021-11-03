@@ -34,8 +34,3 @@
 //     `
 // }
 
-document.querySelector('.form-container').addEventListener("click", clickEvent => {
-    if (clickEvent.target.id === "park-name-dropdown") {
-        
-    }
-})

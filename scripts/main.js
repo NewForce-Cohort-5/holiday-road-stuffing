@@ -1,5 +1,5 @@
 import { Navbar } from "./navbar/Navbar.js";
-import { Form } from "./form/Form.js";
+import { FormSelect } from "./form/FormSelect.js";
 // import {getFiveDayWeather} from "./weather/WeatherProvider.js"
 // import {getFiveDayWeather} from "./weather/WeatherProvider.js"
 // import { Form } from "./form/Form.js";

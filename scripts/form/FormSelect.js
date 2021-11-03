@@ -1,9 +1,8 @@
-import { usePark } from "../parks/ParkProvider.js";
-import { getPark } from "../parks/ParkProvider.js";
-import { useAttractions } from "../attractions/AttractionProvider.js";
-import { getAttractions } from "../attractions/AttractionProvider.js";
-import { useEateries } from "../eateries/EateryProvider.js";
-import { getEateries } from "../eateries/EateryProvider.js";
+import { usePark, getPark } from "../parks/ParkProvider.js";
+import { useAttractions, getAttractions } from "../attractions/AttractionProvider.js";
+import { AttractionList } from "../attractions/AttractionList.js";
+import { useEateries, getEateries } from "../eateries/EateryProvider.js";
+import { eateriesList } from "../eateries/EateriesList.js";
 
 const parkTarget = document.querySelector(".filters-parks");
 const bizarreTarget = document.querySelector(".filters-bizarraries");
@@ -71,3 +70,20 @@ const renderEateries = (eateriesCollection) => {
         </select>
     `
 }
+
+const eventHub = document.querySelector("body")
+
+//listen for change in "eaterySelect" id in the render function then call eateriesList which tagets the html div
+eventHub.addEventListener("change", (eventObj) => {
+
+    if(eventObj.target.id === "eaterySelect") {
+        eateriesList("eateries", eventObj.target.value)
+    }
+})
+
+eventHub.addEventListener("change", (eventObject) => {
+
+    if(eventObject.target.id === "attractionSelect"){
+        AttractionList("attractions", eventObject.target.value)
+    }
+})

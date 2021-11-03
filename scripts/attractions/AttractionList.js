@@ -1,10 +1,10 @@
 import { Attraction } from './Attraction.js'
 import { getAttractions, useAttractions } from "./AttractionProvider.js";
 
+const contentTarget = document.querySelector(".bizarre-attraction")
+
 export const AttractionList = (selectListName, selectedChoice) => {
-    let attractionListContainer = document.querySelector(".attraction-list");
-    let attractionHTML = "";
-    attractionListContainer.innerHTML = attractionHTML
+    
     
     getAttractions()
     .then(() => {
@@ -15,7 +15,7 @@ export const AttractionList = (selectListName, selectedChoice) => {
                 })
             }
                 attractionsArray.forEach((singleAttractionObj) => {
-                    attractionListContainer.innerHTML += Attraction(singleAttractionObj)
+                    contentTarget.innerHTML = Attraction(singleAttractionObj)
                 })
         });
     };

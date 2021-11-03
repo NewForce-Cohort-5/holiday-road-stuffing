@@ -1,7 +1,7 @@
 import { Eatery } from "./EateriesCard.js"
 import { getEateries, useEateries } from "./EateryProvider.js"
 
-const contentTarget = document.querySelector(".eateriesContent")
+const contentTarget = document.querySelector(".eatery")
 
 export const eateriesList = (whichFilter, wordToFilter) => {
     

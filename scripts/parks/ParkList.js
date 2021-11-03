@@ -2,20 +2,20 @@ import { parkCard } from "./ParkCard.js"
 import { getPark, usePark } from "./ParkProvider.js"
 
 
-const contentTarget = document.querySelector("#print-list")
+const contentTarget = document.querySelector(".national-park")
 
-export const parkList = (typeOfDropdown, selectedOption) => {
+export const parkList = (whichFilter, wordToFilter) => {
     getPark()
     .then(() => {
         let parkArray = usePark()
         
-        if (typeOfDropdown === "national-parks") {
+        if (whichFilter === "national-parks") {
             parkArray = parkArray.filter(singleParkObj => {
-                return selectedOption === singleParkObj.fullName
+                return wordToFilter === singleParkObj.fullName
             })
         }
         parkArray.forEach((singleParkObj) => {
-            contentTarget.innerHTML += parkCard(singleParkObj)
+            contentTarget.innerHTML = parkCard(singleParkObj)
         })
     })
 }

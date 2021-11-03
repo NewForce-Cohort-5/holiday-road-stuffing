@@ -4,6 +4,7 @@ import { useAttractions, getAttractions } from "../attractions/AttractionProvide
 import { AttractionList } from "../attractions/AttractionList.js";
 import { useEateries, getEateries } from "../eateries/EateryProvider.js";
 import { eateriesList } from "../eateries/EateriesList.js";
+import {weatherList} from "../weather/WeatherList.js"
 
 const parkTarget = document.querySelector(".filters-parks");
 const bizarreTarget = document.querySelector(".filters-bizarraries");
@@ -95,7 +96,6 @@ eventHub.addEventListener("change", (eventObj3) => {
 
     if(eventObj3.target.id === "park-name-dropdown") {
         parkList("national-park", eventObj3.target.value)
-        weatherList("weather-forecast", eventObj3.target.value)
     } 
 
 })

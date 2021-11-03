@@ -1,65 +1,89 @@
+import { usePark, getPark } from "../parks/ParkProvider.js";
+import { useAttractions, getAttractions } from "../attractions/AttractionProvider.js";
+import { AttractionList } from "../attractions/AttractionList.js";
+import { useEateries, getEateries } from "../eateries/EateryProvider.js";
+import { eateriesList } from "../eateries/EateriesList.js";
 
-
-const parkTarget = document.querySelector(".");
-const bizzareTarget = document.querySelector(".");
-const eateryTarget = document.querySelector(".");
+const parkTarget = document.querySelector(".filters-parks");
+const bizarreTarget = document.querySelector(".filters-bizarraries");
+const eateryTarget = document.querySelector(".filters-eateries");
 
 export const FormSelect = () => {
-    // getParks()
-    // .then(() => {
-    //     const parks = useParks();
-    //     renderParks(parks);
-    // })
-    // getBizarraries()
-    // .then(() => {
-    //     const bizarraries = useBizarraries();
-    //     renderBizarraries(bizarraries);
-    // })
-    // getEateries()
-    // .then(() => {
-    //     const eateries = useEateries();
-    //     renderEateries(eateries);
-    // })
+    getPark()
+    .then(() => {
+        const parks = usePark();
+        renderParks(parks);
+    })
+    getAttractions()
+    .then(() => {
+        const bizarraries = useAttractions();
+        renderBizarraries(bizarraries);
+    })
+    getEateries()
+    .then(() => {
+        const eateries = useEateries();
+        renderEateries(eateries);
+    })
 }
 
-// const renderParks = (parksCollection) => {
-//     contentTarget.innerHTML = `
-//         <select class="form-control dropdown" id="">
-//             <option selected>Choose...</option>
-//             ${
-//                 parksCollection.map((park) => {
-//                     const parkName = park.name;
-//                     return `<option>${parkName}</option>`
-//                 })
-//             }
-//         </select>
-//     `
-// }
+const renderParks = (parksCollection) => {
+    parkTarget.innerHTML = `
+        <label for="">National Parks</label>
+        <select class="form-control dropdown" id="park-name-dropdown">
+            <option selected>Choose...</option>
+            ${
+                parksCollection.map((park) => {
+                    const parkName = park.fullName;
+                    return `<option>${parkName}</option>`
+                })
+            }
+        </select>
+    `
+}
 
-// const renderBizarraries = (bizarrariesCollection) => {
-//     contentTarget.innerHTML = `
-//         <select class="form-control dropdown" id="">
-//             <option selected>Choose...</option>
-//             ${
-//                 bizarrariesCollection.map((attraction) => {
-//                     const attractionName = attraction.name;
-//                     return `<option>${attractionName}</option>`
-//                 })
-//             }
-//         </select>
-//     `
-// }
+const renderBizarraries = (bizarrariesCollection) => {
+    bizarreTarget.innerHTML = `
+        <label for="">Bizarraries</label>
+        <select class="form-control dropdown" id="attractionSelect">
+            <option selected>Choose...</option>
+            ${
+                bizarrariesCollection.map((attraction) => {
+                    const attractionName = attraction.name;
+                    return `<option>${attractionName}</option>`
+                })
+            }
+        </select>
+    `
+}
 
-// const renderEateries = (eateriesCollection) => {
-//     contentTarget.innerHTML = `
-//         <select class="form-control dropdown" id="">
-//             <option selected>Choose...</option>
-//             ${
-//                 eateriesCollection.map((eatery) => {
-//                     const eateryName = eatery.name;
-//                     return `<option>${eateryName}</option>`
-//                 })
-//             }
-//         </select>
-//     `
-// }
+const renderEateries = (eateriesCollection) => {
+    eateryTarget.innerHTML = `
+        <label for="">Eateries</label>
+        <select class="form-control dropdown" id="eaterySelect">
+            <option selected>Choose...</option>
+            ${
+                eateriesCollection.map((eatery) => {
+                    const eateryName = eatery.businessName;
+                    return `<option>${eateryName}</option>`
+                })
+            }
+        </select>
+    `
+}
+
+const eventHub = document.querySelector("body")
+
+//listen for change in "eaterySelect" id in the render function then call eateriesList which tagets the html div
+eventHub.addEventListener("change", (eventObj) => {
+
+    if(eventObj.target.id === "eaterySelect") {
+        eateriesList("eateries", eventObj.target.value)
+    }
+})
+
+eventHub.addEventListener("change", (eventObject) => {
+
+    if(eventObject.target.id === "attractionSelect"){
+        AttractionList("attractions", eventObject.target.value)
+    }
+})

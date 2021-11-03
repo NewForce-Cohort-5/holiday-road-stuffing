@@ -16,7 +16,7 @@ export const EaterySelect = () => {
 
 
 //create dropdown using object in array from api
-const render = ( eateryCollection ) => {
+const render = eateryCollection => {
     contentTarget.innerHTML = `
     <select class="dropdown" id="eaterySelect">
     <option value="0">Please select an eatery</option>
@@ -35,6 +35,7 @@ const render = ( eateryCollection ) => {
 //eventHub targets everything in the body
 const eventHub = document.querySelector("body")
 
+//listen for change in "eaterySelect" id in the render function then call eateriesList which tagets the html div
 eventHub.addEventListener("change", (eventObj) => {
 
     if(eventObj.target.id === "eaterySelect") {

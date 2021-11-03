@@ -1,7 +1,7 @@
 import { Eatery } from "./EateriesCard.js"
 import { getEateries, useEateries } from "./EateryProvider.js"
 
-const contentTarget = document.querySelector(".eateriesContent")
+const contentTarget = document.querySelector(".eatery")
 
 export const eateriesList = (whichFilter, wordToFilter) => {
     
@@ -17,7 +17,9 @@ export const eateriesList = (whichFilter, wordToFilter) => {
             })
         }
         eateryArray.forEach((singleEateryObj) => {
-            contentTarget.innerHTML += Eatery(singleEateryObj)
+            contentTarget.innerHTML = Eatery(singleEateryObj)
         })
     })
 }
+
+//if you want to add more than one eatery to list add + before = Eatery

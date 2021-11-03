@@ -94,7 +94,8 @@ eventHub.addEventListener("change", (eventObj2) => {
 eventHub.addEventListener("change", (eventObj3) => {
 
     if(eventObj3.target.id === "park-name-dropdown") {
-        parkList("national-parks", eventObj3.target.value)
+        parkList("national-park", eventObj3.target.value)
+        weatherList("weather-forecast", eventObj3.target.value)
     } 
 
 })

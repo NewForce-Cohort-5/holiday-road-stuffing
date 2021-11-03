@@ -1,6 +1,6 @@
 
 
-export const Weather = (park) => {
+export const Weather = (weatherObj) => {
     return `
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">

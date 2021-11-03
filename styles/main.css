@@ -9,6 +9,11 @@
   margin: 0.5em;
 }
 
+/* Main */
+main {
+  display: flex;
+}
+
 /* Itinerary Form */
 .form {
   border: 2px solid #a5a58d;
@@ -32,6 +37,17 @@
 
 #search-icon {
   margin-right: 0.5em;
+}
+
+/* Itinerary Container */
+.itinerary-container {
+  margin-top: 5em;
+  width: 75vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */

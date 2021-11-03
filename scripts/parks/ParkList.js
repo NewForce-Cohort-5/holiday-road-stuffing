@@ -9,7 +9,7 @@ export const parkList = (whichFilter, wordToFilter) => {
     .then(() => {
         let parkArray = usePark()
         
-        if (whichFilter === "national-parks") {
+        if (whichFilter === "national-park") {
             parkArray = parkArray.filter(singleParkObj => {
                 return wordToFilter === singleParkObj.fullName
             })

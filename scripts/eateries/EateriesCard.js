@@ -1,4 +1,4 @@
-//This card has the Modal bottun. Do not forget to add two links in index
+//This card has the Modal bottun. Do not forget to add two links for flexbow in index
 
 
 
@@ -58,7 +58,7 @@ if( eateryObject.ameneties.restrooms === true){
     return `
     
     <div class="eateryTag">
-        <h2>${eateryObject.businessName}</h2> 
+        <h3>${eateryObject.businessName}</h3> 
     </div>
    
     <!-- Button trigger modal -->

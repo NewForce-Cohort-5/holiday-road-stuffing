@@ -7,6 +7,7 @@ import { eateriesList } from "../eateries/EateriesList.js";
 const parkTarget = document.querySelector(".filters-parks");
 const bizarreTarget = document.querySelector(".filters-bizarraries");
 const eateryTarget = document.querySelector(".filters-eateries");
+const nationalParkContainer = document.querySelector(".national-park");
 
 export const FormSelect = () => {
     getPark()

@@ -1,6 +1,6 @@
 
 import { getPark, usePark } from "./ParkProvider.js"
-// import { parkList } from "./ParkList.js"
+import { parkList } from "./ParkList.js"
 // import { saveNotes } from "../notes/NoteDataProvider.js"
 
 
@@ -33,23 +33,17 @@ const render = parkCollection => {
     `
 }
 
-// document.querySelector("#container").addEventListener("click", () => {
-//     parkSelect()
-// })
 
+//filtering section
 
+const filterEvent = document.querySelector("body")
+filterEvent.addEventListener("change", (eventObject) => {
+    //chnage is for dd
 
-// //filtering section
+    const dropdownPark = eventObject.target.value
 
+    if(eventObject.target.id === "park-name-dropdown"){
+        parkList("national-parks", dropdownPark)
 
-// const filterEvent = document.querySelector("body")
-// filterEvent.addEventListener("change", (eventObject) => {
-//     //chnage is for dd
-
-//     const dropdownOfficerCrime = eventObject.target.value
-
-//     if(eventObject.target.id === "officer-crime-dropdown"){
-//         CriminalList("officer", dropdownOfficerCrime)
-
-//         }
-//     })
+        }
+    })

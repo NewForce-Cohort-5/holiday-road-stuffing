@@ -9,10 +9,9 @@ export const useWeather = () => {
 
 
 export const getFiveDayWeather = (lat,lon) => {
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${weatherApiKey}`)
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${weatherApiKey}`)
     .then(response => response.json())
     .then(data => {
-        console.log(data.list);
         fiveDayWeatherForecast = data.list;
     })
     .catch(e => {

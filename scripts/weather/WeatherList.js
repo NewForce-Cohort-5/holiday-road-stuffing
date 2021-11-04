@@ -10,9 +10,18 @@ export const weatherList = (whichFilter, wordToFilter) => {
         let fiveDayWeatherArray = useWeather();
         console.log(fiveDayWeatherArray)
         fiveDayWeatherArray.forEach((singleWeatherObj) => {
-            contentTarget.innerHTML = weatherCard(singleWeatherObj)
+            contentTarget.innerHTML += weatherCard(singleWeatherObj)
             console.log(singleWeatherObj)
         })
 
     })
 }
+
+
+/* 
+    -innerHTML of contentTarget needs += to add more than one weatherCard
+    -forEach needs conditionals so that contentTarget only renders a single weather card for each day (total of 5 cards rendered )
+    -weather card temp needs converted from K to C to F
+    -weather card can have a weather icon on accordion 
+    -itinerary preview container needs css layout/styling
+*/

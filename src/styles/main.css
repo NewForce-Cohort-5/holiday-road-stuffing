@@ -135,8 +135,20 @@ a:link {
   margin: 1rem;
 }
 
-/* #saveItinerary {
-  background-color:#a5a58d;
-  border-color: white;
-  color: black;
-} */
+.itinerary-card {
+  border: 1px solid gray;
+  margin: 1rem;
+  margin-top: 2rem;
+  background-color: #a5a58d;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.savedItinerary {
+  margin-top: 4rem;
+  /* overflow-y: scroll; */
+}
+
+.savedItinerary h4 {
+  text-align: center;
+}

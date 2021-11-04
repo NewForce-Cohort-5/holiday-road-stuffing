@@ -41,6 +41,13 @@
       "bizarraryName": "Elvis Memorial Chapel",
       "eateryName": "St. Elmo Steak House",
       "id": 6
+    },
+    {
+      "parkName": "African American Civil War Memorial",
+      "parkState": "DC",
+      "bizarraryName": "World’s Most Scenic Urinal",
+      "eateryName": "Hy's Steak House",
+      "id": 7
     }
   ]
 }

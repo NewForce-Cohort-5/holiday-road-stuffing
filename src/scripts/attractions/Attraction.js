@@ -1,7 +1,6 @@
 export const Attraction = (attraction) => {
   let hasSouvenirs = ""
   let hasRestrooms = ""
-  let noAmenities = ""
   if(attraction.ameneties.souvenirs === true){
     hasSouvenirs = "/src/imgs/souvenirs.png" 
      }   else {

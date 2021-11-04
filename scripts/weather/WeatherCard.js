@@ -11,7 +11,7 @@ export const weatherCard = (weatherObj) => {
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
         <div class="card-body">
             <h5 class="card-title">${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')}</h5>
             <p class="card-text">Today's Weather - ${weatherObj.weather[0].description}</p>

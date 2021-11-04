@@ -42,12 +42,24 @@ main {
 /* Itinerary Container */
 .itinerary-container {
   margin-top: 5em;
-  width: 75vw;
+  width: 50vw;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.weather-forecast {
+  display: flex;
+}
+
+.accordion-body {
+  width: 10vw;
+}
+
+.accordion-body {
+  height: auto;
 }
 
 /* Footer */

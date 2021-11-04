@@ -3,21 +3,15 @@ export const Attraction = (attraction) => {
   let hasRestrooms = ""
   let noAmenities = ""
   if(attraction.ameneties.souvenirs === true){
-    hasSouvenirs = "../imgs/souvenirs.png" 
+    hasSouvenirs = "/src/imgs/souvenirs.png" 
      }   else {
-        hasSouvenirs = "../imgs/no-souvenirs.jpg"
+        hasSouvenirs = "/src/imgs/no-souvenirs.png"
   }
   if(attraction.ameneties.restrooms === true){
-    hasRestrooms = "../imgs/restrooms.jpg"
+    hasRestrooms = "/src/imgs/restrooms.jpg"
     }   else {
-        hasRestrooms = "../imgs/no-restrooms.png"
+        hasRestrooms = "/src/imgs/no-restrooms.png"
   }
-  // if(attraction.ameneties.souvenirs === false && attraction.ameneties.restrooms === false){
-  //   noAmenities = "There are no amenenities here."
-  // } else {
-  //   noAmenities = ""
-  // }
-  
   return `
             <section class="attraction__card">
                 <h4 class="attraction__name">${attraction.name}</h4>

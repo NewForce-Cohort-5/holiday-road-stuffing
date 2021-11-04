@@ -5,7 +5,7 @@ import { parkList } from "./ParkList.js"
 
 
 // Get a reference to the DOM element where the <select> will be rendered
-const contentTarget = document.querySelector("#park-dropwdown")
+const contentTarget = document.querySelector(".national-park")
 
 export const parkSelect = () => {
         // The hint here is GET, in order to use something from DB you need to get it
@@ -37,6 +37,7 @@ const render = parkCollection => {
 //filtering section
 
 const filterEvent = document.querySelector("body")
+
 filterEvent.addEventListener("change", (eventObject) => {
     //chnage is for dd
 

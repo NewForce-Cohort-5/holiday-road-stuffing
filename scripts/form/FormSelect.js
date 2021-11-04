@@ -4,6 +4,7 @@ import { useAttractions, getAttractions } from "../attractions/AttractionProvide
 import { AttractionList } from "../attractions/AttractionList.js";
 import { useEateries, getEateries } from "../eateries/EateryProvider.js";
 import { eateriesList } from "../eateries/EateriesList.js";
+import {weatherList} from "../weather/WeatherList.js"
 
 const parkTarget = document.querySelector(".filters-parks");
 const bizarreTarget = document.querySelector(".filters-bizarraries");
@@ -76,26 +77,25 @@ const renderEateries = (eateriesCollection) => {
 const eventHub = document.querySelector("body")
 
 //listen for change in "eaterySelect" id in the render function then call eateriesList which tagets the html div
-eventHub.addEventListener("change", (eventObj) => {
+eventHub.addEventListener("change", (eventObj1) => {
 
-    if(eventObj.target.id === "eaterySelect") {
-        eateriesList("eateries", eventObj.target.value)
+    if(eventObj1.target.id === "eaterySelect") {
+        eateriesList("eateries", eventObj1.target.value)
+    } 
+
+})
+
+eventHub.addEventListener("change", (eventObj2) => {
+
+    if(eventObj2.target.id === "attractionSelect"){
+        AttractionList("attractions", eventObj2.target.value)
     }
 })
 
-eventHub.addEventListener("change", (eventObject) => {
+eventHub.addEventListener("change", (eventObj3) => {
 
-    if(eventObject.target.id === "attractionSelect"){
-        AttractionList("attractions", eventObject.target.value)
-    }
+    if(eventObj3.target.id === "park-name-dropdown") {
+        parkList("national-park", eventObj3.target.value)
+    } 
+
 })
-
-eventHub.addEventListener("change", (eventObject3) => {
-
-    const dropdownPark = eventObject3.target.value
-
-    if(eventObject3.target.id === "park-name-dropdown"){
-        parkList("national-parks", dropdownPark)
-
-        }
-    })

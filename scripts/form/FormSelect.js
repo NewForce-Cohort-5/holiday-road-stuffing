@@ -10,6 +10,7 @@ const parkTarget = document.querySelector(".filters-parks");
 const bizarreTarget = document.querySelector(".filters-bizarraries");
 const eateryTarget = document.querySelector(".filters-eateries");
 const nationalParkContainer = document.querySelector(".national-park");
+const weatherTarget = document.querySelector('.weather-forecast');
 
 export const FormSelect = () => {
     getPark()
@@ -96,6 +97,7 @@ eventHub.addEventListener("change", (eventObj3) => {
 
     if(eventObj3.target.id === "park-name-dropdown") {
         parkList("national-park", eventObj3.target.value)
+        weatherTarget.innerHTML = "";
     } 
 
 })

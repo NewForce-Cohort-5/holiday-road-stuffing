@@ -1,6 +1,8 @@
 
 
 export const weatherCard = (weatherObj) => {
+  let weatherDescriptionToCompare = weatherObj.weather[0].description;
+  if(weatherDescriptionToCompare.includes("rain")) {
     return `
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -11,15 +13,15 @@ export const weatherCard = (weatherObj) => {
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
         <div class="card-body">
-            <h5 class="card-title">${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')}</h5>
-            <p class="card-text">Today's Weather - ${weatherObj.weather[0].description}</p>
+            <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
+            <i class="bi bi-cloud-rain weather-icon"></i>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">High Temp: ${weatherObj.main.temp_max}F</li>
-            <li class="list-group-item">Low Temp: ${weatherObj.main.temp_min}F</li>
-            <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>
@@ -27,4 +29,142 @@ export const weatherCard = (weatherObj) => {
   </div>
 </div>
     `
+  } else if (weatherDescriptionToCompare.includes("snow")) {
+    return `
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')} 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="card">
+        <div class="card-body">
+            <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
+            <i class="bi bi-cloud-snow weather-icon"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    `
+  } else if (weatherDescriptionToCompare.includes("overcast clouds")) {
+    return `
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')} 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="card">
+        <div class="card-body">
+            <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
+            <i class="bi bi-cloud-sun weather-icon"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    `
+  } else if (weatherDescriptionToCompare.includes("scattered clouds") ||
+  weatherDescriptionToCompare.includes("broken clouds")) {
+    return `
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')} 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="card">
+        <div class="card-body">
+            <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
+            <i class="bi bi-clouds weather-icon"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    `
+  } else if (weatherDescriptionToCompare.includes("few clouds")) {
+    return `
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')} 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="card">
+        <div class="card-body">
+            <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
+            <i class="bi bi-cloud weather-icon"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    `
+  } else if (weatherDescriptionToCompare.includes("clear sky")) {
+    return `
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')} 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="card">
+        <div class="card-body">
+            <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
+            <i class="bi bi-sun weather-icon"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    `
+  }
+  
 }

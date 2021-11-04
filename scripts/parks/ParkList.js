@@ -2,7 +2,7 @@ import { parkCard } from "./ParkCard.js"
 import { getPark, usePark } from "./ParkProvider.js"
 
 
-const contentTarget = document.querySelector("#print-list")
+const contentTarget = document.querySelector(".national-park")
 
 export const parkList = (typeOfDropdown, selectedOption) => {
     getPark()
@@ -15,7 +15,7 @@ export const parkList = (typeOfDropdown, selectedOption) => {
             })
         }
         parkArray.forEach((singleParkObj) => {
-            contentTarget.innerHTML += parkCard(singleParkObj)
+            contentTarget.innerHTML = parkCard(singleParkObj)
         })
     })
 }

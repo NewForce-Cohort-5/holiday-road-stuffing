@@ -1,4 +1,5 @@
 import { usePark, getPark } from "../parks/ParkProvider.js";
+import { parkList } from "../parks/ParkList.js";
 import { useAttractions, getAttractions } from "../attractions/AttractionProvider.js";
 import { AttractionList } from "../attractions/AttractionList.js";
 import { useEateries, getEateries } from "../eateries/EateryProvider.js";
@@ -88,3 +89,13 @@ eventHub.addEventListener("change", (eventObject) => {
         AttractionList("attractions", eventObject.target.value)
     }
 })
+
+eventHub.addEventListener("change", (eventObject3) => {
+
+    const dropdownPark = eventObject3.target.value
+
+    if(eventObject3.target.id === "park-name-dropdown"){
+        parkList("national-parks", dropdownPark)
+
+        }
+    })

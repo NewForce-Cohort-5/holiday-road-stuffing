@@ -58,7 +58,7 @@ if( eateryObject.ameneties.restrooms === true){
     return `
     
     <div class="eateryTag">
-        <h3>${eateryObject.businessName}</h3> 
+        <h4 class="eatery_name">${eateryObject.businessName}</h4> 
     </div>
    
     <!-- Button trigger modal -->

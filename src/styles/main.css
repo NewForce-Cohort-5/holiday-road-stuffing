@@ -19,7 +19,7 @@ main {
   border: 2px solid #a5a58d;
   background-color: #a5a58d;
   border-radius: 10px;
-  width: 25vw;
+  width: 15vw;
   height: auto;
   margin: 5em 10em;
   text-align: center;
@@ -42,12 +42,45 @@ main {
 /* Itinerary Container */
 .itinerary-container {
   margin-top: 5em;
-  width: 75vw;
+  width: 50vw;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.national-park,
+.bizarre-attraction,
+.eatery {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
+.weather-forecast {
+  display: flex;
+  margin: 1em 0;
+}
+
+.accordion-body {
+  width: 11vw;
+}
+
+.card {
+  height: 300px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-text {
+  font-weight: bold;
+}
+
+.weather-icon {
+  font-size: 3em;
 }
 
 /* Footer */

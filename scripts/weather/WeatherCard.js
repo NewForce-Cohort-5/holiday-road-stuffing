@@ -19,9 +19,9 @@ export const weatherCard = (weatherObj) => {
             <i class="bi bi-cloud-rain weather-icon"></i>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
-            <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
-            <li class="list-group-item">Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>
@@ -46,9 +46,9 @@ export const weatherCard = (weatherObj) => {
             <i class="bi bi-cloud-snow weather-icon"></i>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
-            <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
-            <li class="list-group-item">Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>
@@ -73,9 +73,9 @@ export const weatherCard = (weatherObj) => {
             <i class="bi bi-cloud-sun weather-icon"></i>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
-            <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
-            <li class="list-group-item">Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>
@@ -101,9 +101,9 @@ export const weatherCard = (weatherObj) => {
             <i class="bi bi-clouds weather-icon"></i>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
-            <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
-            <li class="list-group-item">Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>
@@ -128,9 +128,9 @@ export const weatherCard = (weatherObj) => {
             <i class="bi bi-cloud weather-icon"></i>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
-            <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
-            <li class="list-group-item">Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>
@@ -155,9 +155,9 @@ export const weatherCard = (weatherObj) => {
             <i class="bi bi-sun weather-icon"></i>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
-            <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
-            <li class="list-group-item">Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
+            <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
+            <li class="list-group-item"><i class="bi bi-moisture"></i> Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item"><i class="bi bi-wind"></i> Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>

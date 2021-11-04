@@ -3,9 +3,9 @@ export const Attraction = (attraction) => {
   let hasRestrooms = ""
   let noAmenities = ""
   if(attraction.ameneties.souvenirs === true){
-    hasSouvenirs = "You can buy souvenirs here." 
+    hasSouvenirs = "../imgs/souvenirs.png" 
      }   else {
-        hasSouvenirs = ""
+        hasSouvenirs = "../imgs/no-souvenirs.jpg"
   }
   if(attraction.ameneties.restrooms === true){
     hasRestrooms = "../imgs/restrooms.jpg"
@@ -40,7 +40,7 @@ export const Attraction = (attraction) => {
       <div class="modal-body">
         <p>${attraction.description}</p>
       </div>
-                <p><img class="restroom-image" src="${hasRestrooms}"></p>
+                <p><img class="restroom-image" src="${hasRestrooms}"> <img class="souvenirs-image" src="${hasSouvenirs}"</p>
                    
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

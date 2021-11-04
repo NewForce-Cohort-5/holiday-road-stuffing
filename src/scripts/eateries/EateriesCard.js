@@ -2,7 +2,6 @@
 
 
 
-
 export const Eatery = (eateryObject) => {
     
     let wheelchairAccessible = ""
@@ -56,9 +55,10 @@ if( eateryObject.ameneties.restrooms === true){
 
 
     return `
-    
+    <div>
     <div class="eateryTag">
-        <h3>${eateryObject.businessName}</h3> 
+        <h4 class="eatery_name">${eateryObject.businessName}</h4> 
+        
     </div>
    
     <!-- Button trigger modal -->
@@ -97,7 +97,8 @@ if( eateryObject.ameneties.restrooms === true){
     </div>
   </div>
 </div>
-
+<button onClick="this.parentNode.parentNode.removeChild(this.parentNode);">Remove</button>
+</div>
     `
 
 }

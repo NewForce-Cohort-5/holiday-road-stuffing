@@ -1,0 +1,39 @@
+{
+  "itineraries": [
+    {
+      "id": 1,
+      "parkName": "Mount Rushmore",
+      "parkState": "SD",
+      "bizarraryName": "Rush's Toes",
+      "eateryName": "Bob's Burgers"
+    },
+    {
+      "id": 2,
+      "parkName": "Barboursville Park",
+      "parkState": "WV",
+      "bizarraryName": "Blinko Glass",
+      "eateryName": "Hillbilly Hotdogs"
+    },
+    {
+      "parkName": "Allegheny Portage Railroad National Historic Site",
+      "parkState": "PA",
+      "bizarraryName": "World’s Largest Egg",
+      "eateryName": "St. Elmo Steak House",
+      "id": 3
+    },
+    {
+      "parkName": "Aleutian Islands World War II National Historic Area",
+      "parkState": "AK",
+      "bizarraryName": "Avery’s Beverages",
+      "eateryName": "Buckhorn Exchange",
+      "id": 4
+    },
+    {
+      "parkName": "Agate Fossil Beds National Monument",
+      "parkState": "NE",
+      "bizarraryName": "Owney the Stuffed Dog Postal Mascot",
+      "eateryName": "Occidental Grill &amp; Seafood",
+      "id": 5
+    }
+  ]
+}

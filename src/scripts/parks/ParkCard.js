@@ -1,7 +1,8 @@
 export const parkCard = (parkObject) => {
     return `
     <section>
-    <div>${parkObject.fullName}</div>
+    <h4 class="park_name">${parkObject.fullName}</h4>
+    <div class="park_state">${parkObject.addresses[0].stateCode}</div>
     </section>
 
     <!-- Button trigger modal -->

@@ -17,7 +17,7 @@ export const eateriesList = (whichFilter, wordToFilter) => {
             })
         }
         eateryArray.forEach((singleEateryObj) => {
-            contentTarget.innerHTML = Eatery(singleEateryObj)
+            contentTarget.innerHTML += Eatery(singleEateryObj)
         })
     })
 }

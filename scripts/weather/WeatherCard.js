@@ -18,7 +18,7 @@ export const weatherCard = (weatherObj) => {
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
             <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
-            <li class="list-group-item">Wind: ${weatherObj.wind.speed}mph</li>
+            <li class="list-group-item">Wind: ${Math.round(weatherObj.wind.speed)}mph</li>
         </ul>
         </div>
       </div>

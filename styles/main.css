@@ -68,7 +68,7 @@ main {
 }
 
 .card {
-  height: 210px;
+  height: 300px;
 }
 
 .card-body {
@@ -77,6 +77,10 @@ main {
 
 .card-text {
   font-weight: bold;
+}
+
+.weather-icon {
+  font-size: 3em;
 }
 
 /* Footer */

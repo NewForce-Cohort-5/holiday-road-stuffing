@@ -16,7 +16,7 @@ export const weatherCard = (weatherObj) => {
             <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Temp: ${weatherObj.main.temp}&#8457;</li>
+            <li class="list-group-item">Temp: ${Math.round(weatherObj.main.temp)}&#8457;</li>
             <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
             <li class="list-group-item">Wind: ${weatherObj.wind.speed}mph</li>
         </ul>

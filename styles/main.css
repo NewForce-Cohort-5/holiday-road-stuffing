@@ -50,16 +50,33 @@ main {
   align-items: center;
 }
 
+.national-park,
+.bizarre-attraction,
+.eatery {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+
 .weather-forecast {
   display: flex;
+  margin: 1em 0;
 }
 
 .accordion-body {
-  width: 10vw;
+  width: 11vw;
 }
 
-.accordion-body {
-  height: auto;
+.card {
+  height: 210px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-text {
+  font-weight: bold;
 }
 
 /* Footer */

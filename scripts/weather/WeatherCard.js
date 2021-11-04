@@ -9,17 +9,16 @@ export const weatherCard = (weatherObj) => {
         ${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')} 
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <div class="card">
         <div class="card-body">
-            <h5 class="card-title">${new Date(weatherObj.dt_txt).toLocaleDateString('en-US')}</h5>
-            <p class="card-text">Today's Weather - ${weatherObj.weather[0].description}</p>
+            <p class="card-text">${(weatherObj.weather[0].description).toUpperCase()}</p>
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">High Temp: ${weatherObj.main.temp_max}F</li>
-            <li class="list-group-item">Low Temp: ${weatherObj.main.temp_min}F</li>
+            <li class="list-group-item">Temp: ${weatherObj.main.temp}&#8457;</li>
             <li class="list-group-item">Humidity: ${weatherObj.main.humidity}%</li>
+            <li class="list-group-item">Wind: ${weatherObj.wind.speed}mph</li>
         </ul>
         </div>
       </div>

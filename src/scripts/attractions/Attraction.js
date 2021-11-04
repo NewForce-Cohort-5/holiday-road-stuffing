@@ -3,39 +3,29 @@ export const Attraction = (attraction) => {
   let hasRestrooms = ""
   let noAmenities = ""
   if(attraction.ameneties.souvenirs === true){
-    hasSouvenirs = "You can buy souvenirs here." 
+    hasSouvenirs = "/src/imgs/souvenirs.png" 
      }   else {
-        hasSouvenirs = ""
+        hasSouvenirs = "/src/imgs/no-souvenirs.png"
   }
   if(attraction.ameneties.restrooms === true){
-    hasRestrooms = "There are restrooms here."
+    hasRestrooms = "/src/imgs/restrooms.jpg"
     }   else {
-        hasRestrooms = ""
+        hasRestrooms = "/src/imgs/no-restrooms.png"
   }
-  if(attraction.ameneties.souvenirs === false && attraction.ameneties.restrooms === false){
-    noAmenities = "There are no amenenities here."
-  } else {
-    noAmenities = ""
-  }
-  
   return `
             <section class="attraction__card">
                 <h4 class="attraction__name">${attraction.name}</h4>
                 
-                <ul style="list-style: none">
-                  <li>${hasSouvenirs}</li>
-                  <li>${hasRestrooms}</li>
-                  <li>${noAmenities}</li>
-                </ul>
+                
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary" id="modalButton" data-bs-toggle="modal" data-bs-target="#attractionsModal">
   More Info
 </button>
             </section>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade" id="attractionsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Found in ${attraction.city}, ${attraction.state}</h5>
@@ -44,6 +34,8 @@ export const Attraction = (attraction) => {
       <div class="modal-body">
         <p>${attraction.description}</p>
       </div>
+                <p><img class="restroom-image" src="${hasRestrooms}"> <img class="souvenirs-image" src="${hasSouvenirs}"</p>
+                   
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>

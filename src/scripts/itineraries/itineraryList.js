@@ -21,21 +21,28 @@ export const itineraryList = () => {
     })
 
 }
+
+
 const saveTarget = document.querySelector("body")
-
-
 
 saveTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveItinerary") {
+        
+const eateryNames = document.querySelectorAll(".eatery_name")
 
+        const eateryNamesArray = []
+        eateryNames.forEach(x=> eateryNamesArray.push( x.innerHTML))
+
+        console.log(eateryNamesArray)
+        
         const newItinerary = {
             parkName: document.querySelector(".park_name").innerHTML,
             parkState: document.querySelector(`.park_state`).innerHTML,
             bizarraryName: document.querySelector(`.attraction__name`).innerHTML,
-            eateryName: document.querySelector(`.eatery_name`).innerHTML
+            eateryName: eateryNamesArray
 
         }
-        console.log( newItinerary)
+       
         saveItinerary(newItinerary)
         .then(itineraryList)
 

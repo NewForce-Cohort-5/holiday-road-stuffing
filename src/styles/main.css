@@ -43,7 +43,7 @@ main {
 .itinerary-container {
   margin-top: 5em;
   margin-right: 5em;
-  /* width: 50vw; */
+  width: 70vw;
   height: auto;
   display: flex;
   flex-direction: column;

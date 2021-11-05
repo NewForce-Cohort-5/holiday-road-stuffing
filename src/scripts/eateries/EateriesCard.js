@@ -91,12 +91,12 @@ if( eateryObject.ameneties.restrooms === true){
         </ul>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>        
       </div>
     </div>
   </div>
 </div>
+
 <button id="removeButton" class="btn btn-outline-dark" onClick="this.parentNode.parentNode.removeChild(this.parentNode);">Remove</button>
 </div>
     `

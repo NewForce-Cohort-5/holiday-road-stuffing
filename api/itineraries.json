@@ -48,6 +48,13 @@
       "bizarraryName": "World’s Most Scenic Urinal",
       "eateryName": "Hy's Steak House",
       "id": 7
+    },
+    {
+      "parkName": "African Burial Ground National Monument",
+      "parkState": "NY",
+      "bizarraryName": "White House Replica",
+      "eateryName": "Hudson's Hamburgers",
+      "id": 8
     }
   ]
 }

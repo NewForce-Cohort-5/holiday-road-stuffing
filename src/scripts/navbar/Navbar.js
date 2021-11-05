@@ -3,7 +3,7 @@ export const Navbar = () => {
     header.innerHTML += `
     <nav class="navbar navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" onclick="location.reload();" href="#">
         <img
           src="imgs/nav-logo.png"
           alt=""

@@ -59,6 +59,7 @@ main {
   margin: 1em 0;
 }
 
+/* Weather Container */
 .weather-forecast {
   display: flex;
   margin: 1em 0;
@@ -135,7 +136,6 @@ a:link {
   width: 50px;
   margin: 1rem;
 }
-
 
 .itinerary-card {
   margin: 1rem;

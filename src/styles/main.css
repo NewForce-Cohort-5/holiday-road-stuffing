@@ -51,14 +51,22 @@ main {
   margin-bottom: 5em;
 }
 
-.national-park,
+.national-park {
+  display: flex;  
+  margin: 1em 0;
+  flex-direction: column;
+}
+
 .bizarre-attraction,
 .eatery {
   display: flex;
-  flex-direction: column;
-  margin: 1em 0;
+  margin-left: 5em;
+  justify-content: space-between
 }
 
+.attraction__card{
+  margin-left: 5em;
+}
 /* Weather Container */
 .weather-forecast {
   display: flex;
@@ -167,4 +175,8 @@ a:link {
 
 .savedItinerary h4 {
   text-align: center;
+}
+
+.attraction__card{
+  display: inline;
 }

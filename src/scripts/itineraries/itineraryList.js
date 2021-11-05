@@ -9,7 +9,7 @@ export const itineraryList = () => {
     .then(() => {
         let itineraryArray = useItinerary()
 
-        let itineraryHTML = ""
+        let itineraryHTML = "<h4>Saved Itineraries</h4>"
 
         itineraryArray.forEach((singleItineraryObj) => {
             itineraryHTML += Itinerary(singleItineraryObj)

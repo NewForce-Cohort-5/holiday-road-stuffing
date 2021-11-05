@@ -1,7 +1,6 @@
 export const Attraction = (attraction) => {
   let hasSouvenirs = ""
   let hasRestrooms = ""
-  let noAmenities = ""
   if(attraction.ameneties.souvenirs === true){
     hasSouvenirs = "/src/imgs/souvenirs.png" 
      }   else {
@@ -28,10 +27,11 @@ export const Attraction = (attraction) => {
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Found in ${attraction.city}, ${attraction.state}</h5>
+        <h5 class="modal-title" id="exampleModalLabel">${attraction.name}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <div class="attraction">${attraction.name} is located in ${attraction.city}, ${attraction.state}.<br><br></div>
         <p>${attraction.description}</p>
       </div>
                 <p><img class="restroom-image" src="${hasRestrooms}"> <img class="souvenirs-image" src="${hasSouvenirs}"</p>

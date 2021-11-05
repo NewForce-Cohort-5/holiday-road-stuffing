@@ -30,6 +30,33 @@
         "Hy's Steak House"
       ],
       "id": 2
+    },
+    {
+      "parkName": "Acadia National Park",
+      "parkState": "ME",
+      "bizarraryName": [
+        "Avery’s Beverages",
+        "Largest Fork in the US"
+      ],
+      "eateryName": [
+        "Louis' Lunch",
+        "H&amp;H Soul Food"
+      ],
+      "id": 3
+    },
+    {
+      "parkName": "Boston National Historical Park",
+      "parkState": "MA",
+      "bizarraryName": [
+        "Snake World",
+        "Owney the Stuffed Dog Postal Mascot"
+      ],
+      "eateryName": [
+        "Club Paris",
+        "H&amp;H Soul Food",
+        "Northwestern Steakhouse"
+      ],
+      "id": 4
     }
   ]
 }

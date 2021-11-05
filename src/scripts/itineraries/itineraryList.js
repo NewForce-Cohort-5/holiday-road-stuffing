@@ -29,19 +29,24 @@ saveTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveItinerary") {
         
 const eateryNames = document.querySelectorAll(".eatery_name")
+    const eateryNamesArray = []
+    eateryNames.forEach(x=> eateryNamesArray.push( x.innerHTML ))
 
-        const eateryNamesArray = []
-        eateryNames.forEach(x=> eateryNamesArray.push( x.innerHTML))
+    console.log(eateryNamesArray)
 
-        console.log(eateryNamesArray)
+const attractionNames = document.querySelectorAll(".attraction__name")
+    const attractionNamesArray = []
+    attractionNames.forEach(x=> attractionNamesArray.push( x.innerHTML ))
+    console.log(attractionNamesArray)
         
-        const newItinerary = {
-            parkName: document.querySelector(".park_name").innerHTML,
-            parkState: document.querySelector(`.park_state`).innerHTML,
-            bizarraryName: document.querySelector(`.attraction__name`).innerHTML,
-            eateryName: eateryNamesArray
 
-        }
+const newItinerary = {
+    parkName: document.querySelector(".park_name").innerHTML,
+    parkState: document.querySelector(`.park_state`).innerHTML,
+    bizarraryName: attractionNamesArray,
+    eateryName: eateryNamesArray
+
+}
        
         saveItinerary(newItinerary)
         .then(itineraryList)

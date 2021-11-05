@@ -19,6 +19,7 @@ export const Attraction = (attraction) => {
   }
   
   return `
+  <div>
             <section class="attraction__card">
                 <h4 class="attraction__name">${attraction.name}</h4>
                 
@@ -49,6 +50,8 @@ export const Attraction = (attraction) => {
       </div>
     </div>
   </div>
+</div>
+<button onClick="this.parentNode.parentNode.removeChild(this.parentNode);">Remove</button>
 </div>
     `
 }

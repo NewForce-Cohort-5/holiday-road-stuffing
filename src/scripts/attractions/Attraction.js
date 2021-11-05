@@ -2,14 +2,14 @@ export const Attraction = (attraction) => {
   let hasSouvenirs = ""
   let hasRestrooms = ""
   if(attraction.ameneties.souvenirs === true){
-    hasSouvenirs = "/imgs/souvenirs.png" 
+    hasSouvenirs = "imgs/souvenirs.png" 
      }   else {
-        hasSouvenirs = "/imgs/no-souvenirs.png"
+        hasSouvenirs = "imgs/no-souvenirs.png"
   }
   if(attraction.ameneties.restrooms === true){
-    hasRestrooms = "/imgs/restrooms.jpg"
+    hasRestrooms = "imgs/restrooms.jpg"
     }   else {
-        hasRestrooms = "/imgs/no-restrooms.png"
+        hasRestrooms = "imgs/no-restrooms.png"
   }
   return `
   <div>

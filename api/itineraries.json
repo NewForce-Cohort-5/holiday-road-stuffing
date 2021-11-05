@@ -1,26 +1,35 @@
 {
   "itineraries": [
-    
     {
-      "parkName": "Alaska Public Lands",
-      "parkState": "AK",
-      "bizarraryName": "Giant Abraham Lincoln",
-      "eateryName": [
-        "Occidental Grill &amp; Seafood",
-        "McClard's BBQ"
+      "parkName": "Abraham Lincoln Birthplace National Historical Park",
+      "parkState": "KY",
+      "bizarraryName": [
+        "Big White Shirt",
+        "Snake World",
+        "World’s Largest ‘Gone With the Wind’ Collection"
       ],
-      "id": 10
+      "eateryName": [
+        "Club Paris",
+        "The Old Clam House",
+        "Deer Park Tavern"
+      ],
+      "id": 1
     },
     {
-      "parkName": "Alaska Public Lands",
-      "parkState": "AK",
-      "bizarraryName": "Giant Abraham Lincoln",
-      "eateryName": [
-        "Occidental Grill &amp; Seafood",
-        "McClard's BBQ",
-        "The Cozy Inn"
+      "parkName": "Ala Kahakai National Historic Trail",
+      "parkState": "HI",
+      "bizarraryName": [
+        "Giant Abraham Lincoln",
+        "Owney the Stuffed Dog Postal Mascot",
+        "World’s Largest Egg"
       ],
-      "id": 11
+      "eateryName": [
+        "Big Bob Gibson Bar-B-Que",
+        "Louis' Lunch",
+        "Deer Park Tavern",
+        "Hy's Steak House"
+      ],
+      "id": 2
     }
   ]
 }

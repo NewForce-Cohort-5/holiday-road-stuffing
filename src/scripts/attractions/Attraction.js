@@ -12,6 +12,7 @@ export const Attraction = (attraction) => {
         hasRestrooms = "/imgs/no-restrooms.png"
   }
   return `
+  <div>
             <section class="attraction__card">
                 <h4 class="attraction__name">${attraction.name}</h4>
                 
@@ -41,6 +42,8 @@ export const Attraction = (attraction) => {
       </div>
     </div>
   </div>
+</div>
+<button id="removeButton" class="btn btn-outline-dark"  onClick="this.parentNode.parentNode.removeChild(this.parentNode);">Remove</button>
 </div>
     `
 }

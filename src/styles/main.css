@@ -130,6 +130,20 @@ a:link {
   border-color: #a5a58d;
 }
 
+#removeButton {
+  background-color: #a5a58d;
+  border-color: #a5a58d;
+  color: white;
+}
+
+
+
+#saveItinerary{
+  background-color: #CB997E;
+  border-color: #ec6a07;
+
+}
+
 .restroom-image,
 .souvenirs-image {
   height: 50px;

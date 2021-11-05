@@ -1,60 +1,62 @@
 {
   "itineraries": [
     {
-      "id": 1,
-      "parkName": "Mount Rushmore",
-      "parkState": "SD",
-      "bizarraryName": "Rush's Toes",
-      "eateryName": "Bob's Burgers"
+      "parkName": "Abraham Lincoln Birthplace National Historical Park",
+      "parkState": "KY",
+      "bizarraryName": [
+        "Big White Shirt",
+        "Snake World",
+        "World’s Largest ‘Gone With the Wind’ Collection"
+      ],
+      "eateryName": [
+        "Club Paris",
+        "The Old Clam House",
+        "Deer Park Tavern"
+      ],
+      "id": 1
     },
     {
-      "id": 2,
-      "parkName": "Barboursville Park",
-      "parkState": "WV",
-      "bizarraryName": "Blinko Glass",
-      "eateryName": "Hillbilly Hotdogs"
+      "parkName": "Ala Kahakai National Historic Trail",
+      "parkState": "HI",
+      "bizarraryName": [
+        "Giant Abraham Lincoln",
+        "Owney the Stuffed Dog Postal Mascot",
+        "World’s Largest Egg"
+      ],
+      "eateryName": [
+        "Big Bob Gibson Bar-B-Que",
+        "Louis' Lunch",
+        "Deer Park Tavern",
+        "Hy's Steak House"
+      ],
+      "id": 2
     },
     {
-      "parkName": "Allegheny Portage Railroad National Historic Site",
-      "parkState": "PA",
-      "bizarraryName": "World’s Largest Egg",
-      "eateryName": "St. Elmo Steak House",
+      "parkName": "Acadia National Park",
+      "parkState": "ME",
+      "bizarraryName": [
+        "Avery’s Beverages",
+        "Largest Fork in the US"
+      ],
+      "eateryName": [
+        "Louis' Lunch",
+        "H&amp;H Soul Food"
+      ],
       "id": 3
     },
     {
-      "parkName": "Aleutian Islands World War II National Historic Area",
-      "parkState": "AK",
-      "bizarraryName": "Avery’s Beverages",
-      "eateryName": "Buckhorn Exchange",
+      "parkName": "Boston National Historical Park",
+      "parkState": "MA",
+      "bizarraryName": [
+        "Snake World",
+        "Owney the Stuffed Dog Postal Mascot"
+      ],
+      "eateryName": [
+        "Club Paris",
+        "H&amp;H Soul Food",
+        "Northwestern Steakhouse"
+      ],
       "id": 4
-    },
-    {
-      "parkName": "Agate Fossil Beds National Monument",
-      "parkState": "NE",
-      "bizarraryName": "Owney the Stuffed Dog Postal Mascot",
-      "eateryName": "Occidental Grill &amp; Seafood",
-      "id": 5
-    },
-    {
-      "parkName": "Abraham Lincoln Birthplace National Historical Park",
-      "parkState": "KY",
-      "bizarraryName": "Elvis Memorial Chapel",
-      "eateryName": "St. Elmo Steak House",
-      "id": 6
-    },
-    {
-      "parkName": "African American Civil War Memorial",
-      "parkState": "DC",
-      "bizarraryName": "World’s Most Scenic Urinal",
-      "eateryName": "Hy's Steak House",
-      "id": 7
-    },
-    {
-      "parkName": "African Burial Ground National Monument",
-      "parkState": "NY",
-      "bizarraryName": "White House Replica",
-      "eateryName": "Hudson's Hamburgers",
-      "id": 8
     }
   ]
 }

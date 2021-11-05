@@ -97,7 +97,7 @@ if( eateryObject.ameneties.restrooms === true){
     </div>
   </div>
 </div>
-<button onClick="this.parentNode.parentNode.removeChild(this.parentNode);">Remove</button>
+<button id="removeButton" class="btn btn-outline-dark" onClick="this.parentNode.parentNode.removeChild(this.parentNode);">Remove</button>
 </div>
     `
 

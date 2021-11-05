@@ -15,7 +15,7 @@ export const AttractionList = (selectListName, selectedChoice) => {
                 })
             }
                 attractionsArray.forEach((singleAttractionObj) => {
-                    contentTarget.innerHTML = Attraction(singleAttractionObj)
+                    contentTarget.innerHTML += Attraction(singleAttractionObj)
                 })
         });
     };
